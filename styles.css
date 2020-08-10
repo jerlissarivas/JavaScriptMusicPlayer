@@ -1,3 +1,23 @@
 body {
-  background-color: aqua;
+  background-color: #5b7c8d;
+  color: #fff;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+input {
+  display: none;
+}
+
+#buttons {
+  text-align: center;
+}
+
+.file-upload {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
 }
