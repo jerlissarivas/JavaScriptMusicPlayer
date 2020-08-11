@@ -26,6 +26,19 @@ function playSong() {
   let song = URL.createObjectURL(songs[currentSong]);
   label.innerText = songs[currentSong].name.slice(0, -4);
   player.setAttribute("src", song);
+  player.play();
+  play.innerText = "⏸";
+  play.onclick = pause;
+}
+
+function pause() {
+  play.innerText = "▶️";
+  player.pause();
+  play.onclick = playCurrent;
+}
+
+function playCurrent() {
   play.innerText = "⏸";
   player.play();
+  play.onclick = pause;
 }
