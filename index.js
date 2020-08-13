@@ -42,3 +42,8 @@ function playCurrent() {
   player.play();
   play.onclick = pause;
 }
+
+function nextSong() {
+  currentSong++;
+  playSong();
+}
