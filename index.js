@@ -47,3 +47,8 @@ function nextSong() {
   currentSong++;
   playSong();
 }
+
+function prevSong() {
+  currentSong--;
+  playSong();
+}
