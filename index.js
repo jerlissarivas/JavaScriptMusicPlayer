@@ -44,11 +44,15 @@ function playCurrent() {
 }
 
 function nextSong() {
-  currentSong++;
-  playSong();
+  if (currentSong + 1 < songs.length) {
+    currentSong++;
+    playSong();
+  }
 }
 
 function prevSong() {
-  currentSong--;
-  playSong();
+  if (currentSong - 1 >= 0) {
+    currentSong--;
+    playSong();
+  }
 }
